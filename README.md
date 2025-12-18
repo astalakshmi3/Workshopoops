@@ -11,7 +11,6 @@
 - Orders that contain products
 
 - Products with individual prices
-
 ### The main goal of the system is to calculate the total price of an order by summing the prices of all products in that order.
 
 ## UML Class Diagram (Conceptual)
