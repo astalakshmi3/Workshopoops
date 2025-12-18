@@ -6,7 +6,7 @@ public class Order {
     private final int OrderID;
     private final Customer customer;
     private final ArrayList<Product> products;
-
+    private String address;
     public Order(int orderID, Customer customer) {
         this.OrderID = orderID;
         this.customer = customer;
@@ -47,7 +47,9 @@ public class Order {
         System.out.println("Order ID: " + OrderID);
         System.out.println("Customer Name: " + customer.getCustomerName());
         System.out.println("Customer Email: " + customer.getCustomerEmail());
+       // System.out.println("Customer Adress: " + customer.getCustomerAddress());
         System.out.println("Total Products:" + products.size());
+       System.out.println("Adress: " + address);
         System.out.println("Products in the Order:");
         for (Product product : products) {
             System.out.println("- " + product.getProductName() + ": " + product.getProductPrice());
