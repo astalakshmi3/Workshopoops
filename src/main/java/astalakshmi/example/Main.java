@@ -3,7 +3,7 @@ package astalakshmi.example;
 
 public class Main {
     static void main() {
-        Customer anna = new Customer(1, "Anna", "anna@gmail.com");
+        Customer anna = new Customer(1, "Anna", "anna@gmail.com", "123 Main St, Springfield, IL, 62701");
         Product pro1 = new Product(1, "Notebook", 150.0);
         Product pro2 = new Product(2, "Pen", 80.0);
         Product pro3 = new Product(3, "Backpack", 200.0);
@@ -26,7 +26,8 @@ public class Main {
         order1.addProduct(pro9);
         order1.addProduct(pro10);
         order1.getOrderDetails();
-
+ Address address = new Address("123 Main St", "Springfield", "IL", "62701");
+ address.getAddressDetails();
     }
 }
 
